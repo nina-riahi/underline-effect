@@ -1,0 +1,31 @@
+.container img{
+    filter: grayscale();
+    width: 200px;
+height: 200px;
+border-radius: 50%;
+transition: filter .4s ease-in-out;
+
+
+
+
+}
+.container:hover img{
+    filter: none;
+}
+.title{
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: whitesmoke;
+    left: 50%;
+    bottom: -10px;
+transition: all 0.4s ease-in-out;
+}
+.container:hover .title::after{
+width: 100%;  
+left: 0;  
+}
